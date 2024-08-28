@@ -1,0 +1,22 @@
+{
+    "name": "maximaster/bitrix-codeception",
+    "description": "Модуль Codeception для запуска тестов использующих Битрикс.",
+    "keywords": ["codeception", "bitrix"],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "codeception/codeception": "^4.0",
+        "maximaster/bitrix-loader": "^1.1",
+        "symfony/lock": "^5.4"
+    },
+    "suggest": {
+        "maximaster/bitrix-single-connect": "^1.0.0 для старых версий Битрикс, где ядро делает два подключения к базе."
+    },
+    "autoload": {
+        "psr-4": {
+            "Maximaster\\BitrixCodeception\\": "src/"
+        }
+    },
+    "authors": [{"name":"Максим Лавриненко", "email": "maxim.lavrinenko@maximaster.ru"}]
+}
